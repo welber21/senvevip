@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SenseVIP - Free Fire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#000000, #111111);
+            color: gold;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #1a1a1a;
+            border: 2px solid gold;
+            border-radius: 15px;
+            padding: 20px;
+        }
+        .code-box {
+            background-color: #000;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid gold;
+            border-radius: 8px;
+        }
+        button {
+            background-color: gold;
+            color: black;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="password"] {
+            padding: 6px;
+            margin-top: 10px;
+        }
+        #vip-section {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 SenseVIP - Códigos de Sensibilidade Free Fire</h1>
+        <p>A cada vídeo, 3 códigos VIP para você colar no seu Free Fire e subir capa insano!</p>
+
+        <div class="code-box">
+            <p><strong>Código 1:</strong> SENSI85-GERAL75-RED75</p>
+            <button onclick="copyCode('SENSI85-GERAL75-RED75')">Copiar</button>
+        </div>
+        <div class="code-box">
+            <p><strong>Código 2:</strong> DPI600-ZONAL40-BOTÃO50</p>
+            <button onclick="copyCode('DPI600-ZONAL40-BOTÃO50')">Copiar</button>
+        </div>
+        <div class="code-box">
+            <p><strong>Código 3:</strong> AWM10-4X60-2X70</p>
+            <button onclick="copyCode('AWM10-4X60-2X70')">Copiar</button>
+        </div>
+
+        <h2>🔒 Área VIP</h2>
+        <input type="password" id="senha" placeholder="Digite a senha">
+        <button onclick="verificarSenha()">Entrar</button>
+
+        <div id="vip-section">
+            <h3>Códigos Exclusivos VIP</h3>
+            <div class="code-box">
+                <p><strong>VIP 1:</strong> 100MS-TELA100-BOTVIP</p>
+                <button onclick="copyCode('100MS-TELA100-BOTVIP')">Copiar</button>
+            </div>
+            <div class="code-box">
+                <p><strong>VIP 2:</strong> RED85-ZOOM65-HAS100</p>
+                <button onclick="copyCode('RED85-ZOOM65-HAS100')">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyCode(text) {
+            navigator.clipboard.writeText(text);
+            alert("Código copiado: " + text);
+        }
+
+        function verificarSenha() {
+            const senha = document.getElementById("senha").value;
+            if (senha === "vip2025") {
+                document.getElementById("vip-section").style.display = "block";
+            } else {
+                alert("Senha incorreta!");
+            }
+        }
+    </script>
+</body>
+</html>
